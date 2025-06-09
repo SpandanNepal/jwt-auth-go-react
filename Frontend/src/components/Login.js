@@ -23,7 +23,7 @@ const Login = () => {
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="mb-4 flex flex-col items-center">
             <label className="block text-gray-700 mb-2" htmlFor="username">
               Username
             </label>
@@ -33,11 +33,11 @@ const Login = () => {
               placeholder="Enter username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-3/4 mx-auto p-2 border rounded bg-sky-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
-          <div className="mb-6">
+          <div className="mb-6 flex flex-col items-center">
             <label className="block text-gray-700 mb-2" htmlFor="password">
               Password
             </label>
@@ -47,7 +47,7 @@ const Login = () => {
               placeholder="Enter password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-3/4 mx-auto p-2 border rounded bg-sky-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
